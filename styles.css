@@ -385,3 +385,33 @@ footer {
   }
 
 }
+
+.nav-link.active {
+  color: var(--brand-orange);
+}
+
+.team-card {
+  background: #131313;
+  border: 1px solid #2a2a2a;
+  border-radius: 1rem;
+  padding: 1.3rem;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--brand-orange);
+}
+
+.team-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 122, 26, 0.5);
+  object-fit: cover;
+}
+
+.team-role {
+  color: var(--brand-orange-soft);
+  font-weight: 700;
+}

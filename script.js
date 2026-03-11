@@ -33,7 +33,8 @@ const instagramPosts = [
 
 const feedbackList = document.getElementById("feedbackList");
 
-feedbacks.forEach((item, index) => {
+if (feedbackList) {
+  feedbacks.forEach((item, index) => {
   const col = document.createElement("div");
   col.className = "col-md-6 col-xl-4 reveal";
   col.style.transitionDelay = `${index * 120}ms`;
@@ -45,12 +46,14 @@ feedbacks.forEach((item, index) => {
     </article>
   `;
 
-  feedbackList.appendChild(col);
-});
+    feedbackList.appendChild(col);
+  });
+}
 
 const instagramFeed = document.getElementById("instagramFeed");
 
-instagramPosts.forEach((post, index) => {
+if (instagramFeed) {
+  instagramPosts.forEach((post, index) => {
   const col = document.createElement("div");
   col.className = "col-md-6 col-xl-4 reveal";
   col.style.transitionDelay = `${index * 90}ms`;
@@ -74,8 +77,9 @@ instagramPosts.forEach((post, index) => {
     </article>
   `;
 
-  instagramFeed.appendChild(col);
-});
+    instagramFeed.appendChild(col);
+  });
+}
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -127,4 +131,5 @@ if (statsSection) {
   statsObserver.observe(statsSection);
 }
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearElement = document.getElementById("year");
+if (yearElement) yearElement.textContent = new Date().getFullYear();
