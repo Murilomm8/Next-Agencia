@@ -487,6 +487,7 @@ footer {
     transform: translateY(0);
   }
 }
+<<<<<<< codex/create-service-listing-webpage-with-whatsapp-a2kko3
 
 .service-page .section-title {
   font-size: clamp(1.8rem, 3.4vw, 2.7rem);
@@ -524,3 +525,5 @@ footer {
     padding: 1.25rem;
   }
 }
+=======
+>>>>>>> main
