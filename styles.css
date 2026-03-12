@@ -487,3 +487,43 @@ footer {
     transform: translateY(0);
   }
 }
+<<<<<<< codex/create-service-listing-webpage-with-whatsapp-a2kko3
+
+.service-page .section-title {
+  font-size: clamp(1.8rem, 3.4vw, 2.7rem);
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+.service-page .section-subtitle {
+  max-width: 760px;
+  line-height: 1.6;
+}
+
+.service-page .service-detail-section {
+  padding: 1.6rem;
+}
+
+.service-page .service-detail-section h2 {
+  color: #f3f3f3;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.service-page .service-detail-section p,
+.service-page .service-list li,
+.service-page .service-topic-card p {
+  line-height: 1.65;
+}
+
+.service-page .service-list li + li {
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 991px) {
+  .service-page .service-detail-section {
+    padding: 1.25rem;
+  }
+}
+=======
+>>>>>>> main
