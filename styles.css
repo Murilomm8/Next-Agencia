@@ -571,3 +571,59 @@ footer {
     width: 38%;
   }
 }
+
+/* ===== Ajustes das Tasks ===== */
+
+/* Clarear menu hamburguer mobile */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.25);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(5);
+}
+
+
+/* Melhorar leitura do texto da hero */
+.hero .lead {
+  color: #e5e5e5;
+}
+
+
+/* Espaçamento feedbacks */
+.feedback-card p:first-child {
+  margin-bottom: 1.4rem;
+}
+
+.feedback-client {
+  margin-top: 1.4rem;
+}
+
+
+/* Corrigir quebra de email no footer */
+.footer-links a {
+  word-break: break-word;
+}
+
+.footer-text {
+  word-break: break-word;
+}
+
+
+/* Reduzir espaçamento footer mobile */
+@media (max-width:768px){
+
+.footer-links{
+gap:0.3rem;
+}
+
+.footer-top .col-6{
+width:48%;
+}
+
+.footer-links a,
+.footer-links span{
+font-size:0.9rem;
+}
+
+}
